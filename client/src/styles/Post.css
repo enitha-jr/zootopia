@@ -1,0 +1,84 @@
+.post-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2a3b4c;
+    margin: 10vh;
+}
+
+.post-form {
+    display: flex;
+    gap: 50px;
+    /* height: 40vh; */
+    width: 65vw;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 20px -20px;
+}
+
+.post-form-left,
+.post-form-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    padding: 10px;
+    border: 1.5px solid #bbb;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input[type="file"] {
+    min-height: 50vh;
+}
+
+textarea {
+    min-height: 35px;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.post-form  button {
+    padding: 12px;
+    background-color: #2a3b4c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.post-form button[type="submit"]:hover {
+    background-color: #1e2c3a;
+}
+
+.post-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1.5px solid #bbb;
+    color: #2a3b4c;
+}
+
+.post-form select:focus {
+    outline: none;
+    border-color: #2a3b4c;
+}
+
+.post-form option {
+    background-color: #ddd;
+    color: #2a3b4c;
+}

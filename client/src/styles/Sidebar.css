@@ -1,0 +1,84 @@
+.sidebar {
+  width: 3vw;
+  height: 85vh;
+  background-color: #2a3b4c;
+  padding: 30px 10px;
+  margin: 3vh 0 3vh 3vh;
+  border-radius: 12px;
+  box-shadow: rgba(86, 124, 141, 0.5) -80px 0px 60px -30px inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* width: 100%; */
+  align-items: center;
+
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: #efeae6;
+  background-color: transparent;
+  border: 1.5px solid #efeae6;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: #efeae6a9;
+  color: #2a3b4c;
+  transform: translateY(-4px);
+}
+
+.sidebar-link.active {
+  background-color: #efeae6;
+  color: #2a3b4c;
+  font-weight: bold;
+  box-shadow: inset 0 0 0 2px #2a3b4c;
+}
+/* Tooltip container stays the same */
+.tooltip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tooltip text - shown on the right */
+.tooltip-text {
+  visibility: hidden;
+  background-color: #2a3b4c;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  left: 110%; /* position to the right of the icon */
+  top: 40%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}

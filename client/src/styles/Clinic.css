@@ -1,0 +1,45 @@
+.clinic-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clinic-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 95%;
+    /* border: 2px solid red; */
+}
+
+.clinic-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 17vw;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    word-break: break-word;
+}
+
+.clinic-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.clinic-card h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.clinic-card p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}

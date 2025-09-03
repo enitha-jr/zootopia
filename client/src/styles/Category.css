@@ -1,0 +1,134 @@
+.details-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.details-popup-container {
+  position: relative;
+  background: #fff;
+  width: 50vw;
+  height: 60vh;
+  border-radius: 8px;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slide-in 0.3s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.popup-image-wrapper {
+  width: 25vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* border: 2px solid red; */
+  margin: 0 0 0 4vh;
+}
+
+.popup-image {
+  /* border: 2px solid red; */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.popup-right-side {
+  width: 25vw;
+  height: 50vh;
+  margin: 2vh 5vh 2vh 2vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e0e0;
+  padding: 0 20px;
+  border-radius: 6px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.popup-right-side p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a2b3c;
+  margin: 10px 0;
+}
+
+.popup-description{
+  font-weight: 500;
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+  font-style: italic;
+}
+.popup-detail {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.contact-button {
+  text-align: center;
+  background-color: #1a2b3c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.popup-seller {
+  font-size: 1rem;
+  color: #1a2b3c;
+  cursor: pointer;
+  border: 2px solid #1a2b3c;
+  padding: 5px;
+  border-radius: 6px;
+  width: fit-content;
+  /* margin: auto; */
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
